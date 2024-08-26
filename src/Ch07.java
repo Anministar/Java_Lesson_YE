@@ -93,6 +93,21 @@ public class Ch07 {
 	    // 두 수의 합이 짝수면 "두 수의 합은 짝수입니다."
 	    // 두 수의 합이 홀수면 "두 수의 합은 홀수입니다" 
 	    // 위와 같은 결과값이 나오도록 코딩하세요 !
+		
+		
+//		   System.out.println("--------------- if-else문 문제 01 ---------------");
+//	       System.out.print("정수 두 개 입력 1, 2 >>> ");
+//	       int a1 = scanner.nextInt();
+//	       int a2 = scanner.nextInt();
+//
+//	       // 두 수의 합이 짝수인지 홀수인지 체크하여 출력
+//	       if ((a1 + a2) % 2 == 0) {
+//	           System.out.println("두 수의 합은 짝수입니다.");
+//	       } else {
+//	           System.out.println("두 수의 합은 홀수입니다.");
+//	       }
+//	       System.out.println();
+	       
            
 		  
 	    // 2-3) 중첩 if문
@@ -155,6 +170,82 @@ public class Ch07 {
 //      If문 통합 문제 01)
      //	짝수이면서 3의 배수이면 출력
      //	홀수이면서 5의 배수이면 출력
+	       
+//	       System.out.println("--------------- if문 통합 문제 01 ---------------");
+	       
+//	       System.out.print("정수 : ");
+//	       int num = scanner.nextInt();
+	//
+//	       // 짝수의 여부 체크
+//	       if (num % 2 == 0) {
+//	           // 짝수면서 3의 배수 여부 체크
+//	           if (num % 3 == 0) {
+//	               System.out.printf("%d는 짝수이면서 3의 배수입니다!\n", num);
+//	           } else {
+//	               System.out.printf("%d는 짝수이면서 3의 배수가 아닙니다!", num);
+//	           }
+//	       } else {
+//	           // 홀수면서 5의 배수 여부 체크
+//	           if (num % 5 == 0) {
+//	               System.out.printf("%d는 홀수이면서 5의 배수입니다!\n", num);
+//	           } else {
+//	               System.out.printf("%d는 홀수이면서 5의 배수가 아닙니다!", num);
+//	           }
+//	       }
+		
+		
+		 
+	    // 05 else - if 
+	    // 다중분기
+	       System.out.println("--------------- else-if문 예제 01 ---------------");
+	       Scanner scanner = new Scanner(System.in);
+	       
+	       
+	       System.out.print("나이 입력 : >>> ");
+	       int age = scanner.nextInt();
+
+	       if (age >= 20) {
+	           System.out.println("성인입니다.");
+	       } else if (age >= 8) {
+	           System.out.println("취학 아동입니다.");
+	       } else {
+	           System.out.println("미취학 아동입니다.");
+	       }
+	       
+	       
+	       // else - if 문 문제 01)
+	       //시험 점수를 입력받아 90 ~ 100점은 A,
+	   	//80 ~ 89점은 B, 70 ~ 79점은 C,
+	   	//60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오.
+	   	
+	   	// score >= 90 A
+	   	// score >= 80 B
+	   	// score >= 70 C
+	   	// score >= 60 D
+	   	// 그외 F
+	       System.out.println("--------------- else-if문 문제 01 ---------------");
+	   	Scanner sc = new Scanner(System.in);
+	   	int score = sc.nextInt();
+	   	if (score >= 90) {
+	   		System.out.println("A");
+	   	}
+	   	else if (score >= 80) {
+	   		System.out.println("B");
+	   	}
+	   	else if (score >= 70) {
+	   		System.out.println("C");
+	   	}
+	   	else if (score >= 60) {
+	   		System.out.println("D");
+	   	}
+	   	else {
+	   		System.out.println("F");
+	   	}
+	        		
+	          
+	          
+	          
+		
 		
 		
 	}
