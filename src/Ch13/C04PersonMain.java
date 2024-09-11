@@ -17,7 +17,7 @@ public class C04PersonMain {
 	// ## 생성자 사용법 ##
 	// 1. 생성자 함수는 클래스 이름과 반드시 동일해야함.
 	// 2. 클래스와 동일하게 반환 타입(반환 자료형)이 없음.
-	
+
 	// 생성자(Constructor)
 	public C04PersonMain() {
 		System.out.println("default 생성자입니다!!");

@@ -112,6 +112,7 @@ class Vehicle {
 	}
 }
 
+
 // 자식 클래스 : 자동차(Car)
 class Car extends Vehicle {
 	Car(String brand) {
