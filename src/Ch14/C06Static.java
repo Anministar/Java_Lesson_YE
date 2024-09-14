@@ -3,10 +3,6 @@ class Person {
 	static String country = "한국";
 	String name;
 }
-Person hong = new Person();
-Person dong = new Person();
-
-hong.name = "홍길동";
 
 
 
