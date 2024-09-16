@@ -6,6 +6,23 @@ class Person {
 
 
 
+// ------------------------------ main ---------------------------------------
+//
+//
+//// 객체를 생성하기 전에 country라는 static(class) 변수에 접근할 수 있음.
+//Person.country = "일본";
+//
+//
+//// 객체를 생성하는 코드
+//Person dong = new Person();
+//dong.name = "이동하";
+//Person hong = new Person();
+//hong.name = "홍길동";
+//
+//
+//
+
+
 
 
 // ### 자바의 메모리 구조 ###
@@ -67,10 +84,10 @@ public class C06Static {
 		
 		Simple obj2 = new Simple();
 		
-		obj1 = obj2;
-		
-		System.out.println(System.identityHashCode(obj1));
-		System.out.println(System.identityHashCode(obj2));
+//		obj1 = obj2;
+//		
+//		System.out.println(System.identityHashCode(obj1));
+//		System.out.println(System.identityHashCode(obj2));
 		
 		obj1.Num1 = 10;
 		obj1.Num2 = 20;
