@@ -8,10 +8,32 @@ package Ch14;
 // Sharpen 클래스를 완성해주세요!!    ==> 자식 클래스
 // Pencil 클래스를 완성해주세요!!	    ==> 자식 클래스
 
+class Moonbanggu {
+	
+	public int SharpenCnt = 100;
+	public int PencilCnt = 100;
+	
+}
+
+class Sharpen extends Moonbanggu {
+	public Sharpen() {
+	
+		SharpenCnt--;
+	}
+	
+}
+
+
+class Pencil extends Moonbanggu {
+	public Pencil() {
+		PencilCnt--;
+	}
+}
 
 
 public class C06Prac {
 	public static void main(String[] args) {
+		
 		Sharpen item1 = new Sharpen();				// 샤프 재고가 1씩 감소해야 함.
 		Pencil item2 = new Pencil();				// 연필 재고가 1씩 감소해야 함.
 													// ==> 객체 생성시 재고가 1씩 감소하는 로직을 가져야함.
