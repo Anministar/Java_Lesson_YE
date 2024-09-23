@@ -39,6 +39,7 @@ class C03Company {
 }
 public class C08SingleTonMain {
 	public static void main(String[] args) {
+		
 		C03Company myCom = C03Company.getInstance();
 		C03Company myCom1 = C03Company.getInstance();
 		
