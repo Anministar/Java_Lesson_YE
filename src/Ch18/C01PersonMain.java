@@ -10,6 +10,46 @@ class C01Person {
 public class C01PersonMain {
 	
 	public static void main(String[] args) {
+		
+		
+		int[] test = new int[3];
+		
+		
+		
+		
+		
+		Person[] test = new Person[3];
+		
+		test[0].name = "이동하";
+		test[0].age	= 12;
+		test[0].addr = "대구";
+		
+		
+		
+		
+		test[0] = new Person();
+		
+		test[0].name = "이동하";
+		test[0].age	= 12;
+		test[0].addr = "대구";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		// 클래스 배열을 선언하는 것과 객체를 만드는 일은 별개다?
 		// 정수형 배열을 선언하고 그 안에 값을 넣는것처럼
 		
