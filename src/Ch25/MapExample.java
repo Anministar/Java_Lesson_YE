@@ -23,17 +23,19 @@ public class MapExample {
 		hashMap.put("One", 11);		// 중복이면 최신 업데이트 된 애가 나옴.
 		
 		
-		
+		 
 		// get 메서드를 사용하여 특정 키에 해당하는 값 얻기
 		System.out.println("Value for key 'Two' : " + hashMap.get("Two"));
-		// 출력 : Value for keeey 'Two' : 2
+		// 출력 : Value for key 'Two' : 2
 		
-		// containsKey 메서드를 사용하여 키의 존재 여부 확인
+		// containsKey 메서드를 사용하여키의 존재 여부 확인
 		System.out.println("Contains key 'Four' : " + hashMap.containsKey("Four"));
 		// 출력 : Contains key 'Four' : false
 		
+		
 		// keySet 메서드를 사용하여 모든 키를 얻기
 		Set<String> keys = hashMap.keySet();		// 모든 키를 set으로 반환
+													// Set<String>로 자료형을 지정한 이유 : Map의 Key의 자료형이 String이기 때문.
 		System.out.println("Keys : " + keys);
 		// 출력 : Keys : [One, Two, Three]
 		
@@ -42,7 +44,18 @@ public class MapExample {
 		// 출력 : Values : [1, 2, 3]
 		
 		// entrySet 메서드를 사용하여 모든 키 - 값 쌍 얻기
-		Set<Map.Entry<String,Integer>> entrySet = hashMap.entrySet(); //Map의 모든 키 - 값 쌍 Set으로 반환
+		
+		// ### 이해 로직 ###
+		//										   ↓ entry라는 단위를 Set 묶음에 넣어서 반환해줘
+//		Set<Map.entry<String, Integer>> entrySet = hashMap.entrySet();		
+		// ↑ 1. Set<> 자료를 가져함.
+		//   2. entry라는 단위를 set의 요소로 가지므로 ==> Set <entry>
+		//   3. entry라는건 Interface인데 Map안에 있기 때문에 ==> Set <Map.entry>
+		//   4. entry 단위 속을 자세히 확대해보면 그 안에 자료들이 문자(key)와 정수(value)로 이루어져 있음 ==> Set<Map.entry<String, Integer>>
+		//   5. 이러한 자료형을 가져야 한다.
+		
+		
+		Set< Map.Entry<String,Integer>> entrySet = hashMap.entrySet(); //Map의 모든 키 - 값 쌍 Set으로 반환
 		System.out.println("Entry Set : " + entrySet);
 		// 출력 : Entry Set : [One=1, Two=2, Three=3]
 		
