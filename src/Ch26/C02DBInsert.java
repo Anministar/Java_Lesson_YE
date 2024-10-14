@@ -28,10 +28,10 @@ public class C02DBInsert {
 
 			// SELECT, INSERT, DELETE, UPDATE....
 			pstmt = conn.prepareStatement("Insert into tbl_customer values (?, ?, ?, ?)");
-			pstmt.setInt(1, 3);
-			pstmt.setString(2, "고냠미");
-			pstmt.setInt(3, 4);
-			pstmt.setString(4, "대구");
+			pstmt.setInt(1, 5);
+			pstmt.setString(2, "펭귄");
+			pstmt.setInt(3, 10);
+			pstmt.setString(4, "남극");
 			
 			int result = pstmt.executeUpdate();
 			if (result != 0) {
